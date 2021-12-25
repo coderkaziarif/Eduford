@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <title>Eduford | Blog</title>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="course.html" target="_blank">Course</a></li>
+                    <li><a href="about.html" target="_blank">About</a></li>
+                    <li><a  href="blog.html" target="_blank">Blog</a></li>
+                    <li><a href="contact.html" target="_blank">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Certificate & Only Programs for 2021.</h1>
+    </section>
+
+    <!-- Blog page Content -->
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="images/certificate.jpg" alt="photo">
+                <h2>Our Certificate & Only Programs for 2021.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ipsam similique fugiat eveniet sunt! Magnam vitae ratione explicabo fugit! Omnis nesciunt voluptate eum optio doloremque exercitationem iste, repudiandae, iure iusto animi vitae hic ipsam sint ullam ducimus praesentium incidunt quibusdam. Doloribus nihil mollitia nesciunt fugiat impedit, nostrum vitae quas, reprehenderit ad earum iure non suscipit doloremque iste vel! Odit, quod.</p> <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error eum consectetur soluta quasi nam, asperiores officia tempora laborum distinctio, itaque quae animi id ea velit, repellat reiciendis exercitationem voluptas accusantium assumenda odio nihil cumque eius veniam? Adipisci officia corrupti ipsam, possimus animi quod excepturi error consequuntur non hic tempora sint temporibus esse iure harum consectetur voluptate dolorum quidem dolore odio delectus quasi deserunt. Illo similique excepturi rem sint optio facilis, quos quaerat eos, rerum mollitia quod debitis reprehenderit recusandae sequi, deleniti ipsum! Amet, omnis eveniet. Sequi dolores explicabo illum nihil modi eos accusamus nemo, est, nisi quas deserunt? Tempore, molestias.</p>
+                <br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel quo debitis aperiam minus culpa quod temporibus, laboriosam unde, itaque praesentium a asperiores facere reprehenderit eveniet distinctio expedita. Voluptate totam obcaecati reiciendis quae. Excepturi saepe hic id optio at ratione a ut distinctio laudantium neque perferendis cum recusandae quod dicta, officiis ea asperiores culpa. Ex, tempora exercitationem. Rem quidem quia corrupti, facilis recusandae odio similique adipisci accusamus iste? Repudiandae, dolorum ea.</p><br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos excepturi exercitationem eveniet ut reiciendis aspernatur, recusandae inventore nemo sequi magni quos eligendi assumenda dolorum doloribus ipsum possimus sapiente mollitia praesentium veniam error neque tenetur accusamus. Autem asperiores quasi nobis sunt.</p>
+
+                <div class="comment-box">
+                    <h3>leave a comment</h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea rows="5"></textarea>
+                        <button type="submit" class="hero-btn red-btn">Post Comment</button>
+                    </form>
+
+                </div>
+            </div>
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Business Analytics</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Data Science</span>
+                    <span>28</span>
+                </div>
+                <div>
+                    <span>Machine Learning</span>
+                    <span>15</span>
+                </div>
+                <div>
+                    <span>Computer Science</span>
+                    <span>34</span>
+                </div>
+                <div>
+                    <span>AutoCAD</span>
+                    <span>42</span>
+                </div>
+                <div>
+                    <span>Journalism</span>
+                    <span>22</span>
+                </div>
+                <div>
+                    <span>Commerce</span>
+                    <span>30</span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+   
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, eius facere obcaecati <br> aspernatur ducimus similique earum blanditiis at cum dolor.</p>
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram" ></i>
+            <i class="fab fa-linkedin" ></i>
+        </div>
+        <p>Copyright &copy; 2021, All Rights Reserved by <i class="far fa-heart"></i> Kazi Arif.</p>
+    </section>
+
+<!-- JS for Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = '0';
+        }
+        function hideMenu(){
+            navLinks.style.right = '-200px';
+        }
+    </script>
+</body>
+</html>
